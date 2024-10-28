@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="imgs/wihte-icon.png">
+    <title>My Portfolio</title>
+
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- ______________________Bootstrap4 CDN ______________ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <!-- ______________________Fontawesome CDN ______________ -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- ______________________Google-Fonts CDN ______________ -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ______________________External Css File ______________ -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- ______________________LeafLet map CDN ______________ -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+
+    <!-- _________________Jquery SVG-3D && external js file ______________ -->
+    <script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script defer src='js/jquery.svg3dtagcloud.js'></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <!--<span class="letterOne">Intel</span> <span class="letterTwo">Pulse</span> -->
+                    <!-- <img src="./imgs/wihte-icon.png" width="35px"> -->
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="#home" class="material-icons">home</a>
+                <a href="#about" class="material">About Us</a>
+                <a href="#project" class="material">Project Scope</a>
+                <a href="#milestones" class="material">MileStones</a>
+                <a href="#achievements" class="material">Achievements</a>
+                <a href="#contact" class="material">Contact us</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+       <!-- <div class="container">
+
+                        <button type="button" class="Btn Btn--resume">
+                            <a href="https://docs.google.com/document/d/1rkT_79Hb5qYM3IEzFmh1VZJxqEaDohz1gZBjnTkI1Jw/edit?usp=sharing"
+                                target="_blank"> My Resume </a>
+                        </button>
+                    </div> -->
+
+                      <!------------------- HOME SECTION ------------------->
+                      <section class="home" id="home">
+                        <div class="overlay">
+                            <div class="content">
+                                <h1 class="main-heading">
+                                    Mitigating Cyber Supply Chain Risks in Finance 
+                                </h1>
+                                <div class="home-btn-group">
+                                    <a href="#project">
+                                    <button class="btn btn-primary">
+                                        <p class="btn-text">Explore Research</p>
+                                    </button>
+                                </a>
+                                    <a href="#document">
+                                    <button class="btn btn-secondary">
+                                        <p class="btn-text">Documents</p>
+                                    </button>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="picture6.jpg" alt="banner image" class="full-screen-img">
+                    
+
+            </div>
+            <canvas id="c"></canvas>
+        </section>
+
+        <section class="text-image-section">
+          <div class="image-container">
+              <img src="Literature.jpg" alt="Descriptive Image">
+          </div>
+          <div class="text-container">
+              <h2>Literature Review</h2>
+              <p>
+                The literature indicates that financial institutions increasingly rely on third-party vendors, intensifying the need for robust cybersecurity frameworks. Traditional risk assessment methods have proven inadequate in addressing modern cybersecurity challenges, as they often fail to adapt dynamically to evolving threats. Integrating machine learning and zero-trust architectures has shown potential for improving data classification, sensitivity analysis, and secure data sharing. However, a comprehensive solution combining these technologies for real-time cybersecurity risk management within financial supply chains remains underexplored​.
+              </p>
+          </div>
+      </section>
+      
+
+
+        
+        <section class="testimonials" id="project">
+            <div class="testimonials-left">
+                <h2 class="section-title">Research Problem</h2>
+                <p class="section-text">
+                  Financial institutions face significant cybersecurity risks in their supply chains, particularly due to third-party vendors with access to critical data and systems. Current risk assessment frameworks are limited in their ability to identify and mitigate these evolving cyber threats. There is a need for an integrated, scalable solution that can streamline vendor assessments, classify sensitive data, and provide tailored threat intelligence to enhance the security posture within the financial sector​.
+                </p>
+            </div>
+
+            <div class="testimonials-right">
+                <div class="testimonials-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonials-text">
+                      This research proposes a multi-component framework that includes a centralized risk assessment gateway, sensitive data classification, and a machine learning-driven threat intelligence platform. By combining a zero-trust policy with machine learning, this approach enhances security measures, offering financial institutions a unified model for identifying and managing cybersecurity risks associated with third-party vendors​.
+                    </p>
+                    <div class="testimonials-client">
+                        <div class="client-detail">
+                            <h4 class="client-name">Solution</h4>
+                            <!-- <p class="client-title">Customer</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- cw -->
+
+        <Section class="category">
+            <h2 class="section-title">Research Gap</h2>
+            <ul class="course-item-group">
+                <li class="course-category-item">
+                    <div class="course-category-content">
+                        <h3 class="category-title">
+                            <a href="#">Risk Assessment</a>
+                        </h3>
+                        <p class="category-subtitle">How to assess the risk of third-party organizations before trusting their services?</p>
+                    </div>
+                </li>
+
+                <li class="course-category-item">
+                    <div class="course-category-content">
+                        <h3 class="category-title">
+                            <a href="#">Secure Data Transfer</a>
+                        </h3>
+                        <p class="category-subtitle">How to securely share text and image data in supply chain (financial sector)?</p>
+                    </div>
+                </li>
+
+                <li class="course-category-item">
+                    <div class="course-category-content">
+                        <h3 class="category-title">
+                            <a href="#">Threat Intel Feeds</a>
+                        </h3>
+                        <p class="category-subtitle">How to improve Threat Intelligence within the sector to stay posted and up to date? </p>
+                    </div>
+                </li>
+            </ul>
+        </Section>
+
+        <!------------------- EVENT SECTION ------------------->
+        <section class="event">
+            <div class="event-left">
+                <div class="event-banner">
+                    <img src="picture2.jpg" alt="event banner" class="banner-img">
+                </div>
+
+                <button class="play smooth-zigzag-anim-1">
+                    <div class="play-icon pulse-anim">
+                        <ion-icon name="play-circle"></ion-icon>
+                    </div>
+
+                </button>
+            </div>
+
+            <div class="event-right">
+                <h2 class="section-title">Research Objectives</h2>
+                <div class="event-card-group">
+                    <div class="event-card">
+                        <div class="content-left">
+                            <p class="day">01</p>
+                        </div>
+                        <div class="content-right">
+                            <div class="schedule">
+                                <p class="event-title">Sub Objective 1</p>
+                                <p class="place">Machine Learning based Threat Intelligence Platform along with an NLP approach to customize threat feeds based on industry, attacks TTPs, Ips, IoCs and to reduce the signal to noise ratio for prioritization.​</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card-group">
+                        <div class="event-card">
+                            <div class="content-left">
+                                <p class="day">02</p>
+                            </div>
+                            <div class="content-right">
+                                <div class="schedule">
+                                    <p class="event-title">Sub Objective 2</p>
+                                    <p class="place">Creating a secure data transmission framework for images that integrates machine learning and Zero Trust Architecture.​</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-card-group">
+                            <div class="event-card">
+                                <div class="content-left">
+                                    <p class="day">03</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="schedule">
+                                        <p class="event-title">Sub Objective 3</p>
+                                        <p class="place">Develop a secure data sharing framework that leverages text-based machine learning technology and a zero-trust architecture.​​</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-card-group">
+                                <div class="event-card">
+                                    <div class="content-left">
+                                        <p class="day">04</p>
+                                    </div>
+                                    <div class="content-right">
+                                        <div class="schedule">
+                                            <p class="event-title">Sub Objective 4</p>
+                                            <p class="place">Integrate zero-trust principles and strategies into the risk management process and make it a more secure, transparent, and resilient ecosystem</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="methodology-section">
+          <div class="content-box">
+              <div class="methodology-content">
+                  <div class="image-container">
+                      <img src="Methodology.jpg" alt="Methodology Image">
+                  </div>
+                  <div class="text-container">
+                      <h2>Methodology</h2>
+                      <p>
+                        The proposed methodology involves developing a secure, web-based risk assessment portal where vendors can submit information for evaluation. Using a combination of machine learning algorithms and natural language processing, the system will classify text and image data for sensitivity, while zero-trust protocols enforce access restrictions. A threat intelligence platform will analyze external threat feeds, providing security teams with actionable insights for proactive risk mitigation​
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      
+
+        <section id="milestones">
+            <div class="container">
+                <h2>Milestones</h2>
+                <div class="timeline-grid">
+                    <div class="milestone-card">
+                      <div class="date">March 2021</div>
+                      <div class="title">
+                        <span class="circle-progress">6%</span>
+                        Project Proposal
+                      </div>
+                      <p class="description">
+                        A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.
+                      </p>
+                      <p class="marks">Marks Allocated: 6</p>
+                    </div>
+                    <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">6%</span>
+                          Progress Presentation I
+                        </div>
+                        <p class="description">
+                          Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.
+                        </p>
+                        <p class="marks">Marks Allocated: 6</p>
+                      </div>
+                      <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">10%</span>
+                          Research Paper
+                        </div>
+                        <p class="description">
+                          Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge
+                        </p>
+                        <p class="marks">Marks Allocated: 10</p>
+                      </div>
+                      <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">18%</span>
+                          Progress Presentation II
+                        </div>
+                        <p class="description">
+                          Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.
+                        </p>
+                        <p class="marks">Marks Allocated: 18</p>
+                      </div>
+                      <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">2%</span>
+                          Website Assessment
+                        </div>
+                        <p class="description">
+                          The Website helps to promote our research project and reveals all details related to the project.
+                        </p>
+                        <p class="marks">Marks Allocated: 2</p>
+                      </div>
+                      <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">3%</span>
+                          Logbook
+                        </div>
+                        <p class="description">
+                          Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.
+                        </p>
+                        <p class="marks">Marks Allocated: 3</p>
+                      </div>
+                      <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">19%</span>
+                          Final Report
+                        </div>
+                        <p class="description">
+                          Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.
+                        </p>
+                        <p class="marks">Marks Allocated: 19</p>
+                      </div>
+                      <div class="milestone-card">
+                        <div class="date">March 2021</div>
+                        <div class="title">
+                          <span class="circle-progress">20%</span>
+                          Final Presentation & Viva
+                        </div>
+                        <p class="description">
+                          Viva is held individually to assess each members contribution to the project.
+                        </p>
+                        <p class="marks">Marks Allocated: 20</p>
+                      </div>
+                  </div>
+                  
+            </div>
+        </section>
+        
+
+
+        <section id="about">
+            <div class="container">
+
+                <div class="about">
+                    <div class="about__info about_scroll">
+                        <h2>Technologies Used</h2>
+                        <div class="skills-list">
+                            <p>React JS</p>
+                            <p>Flask</p>
+                            <p>SQLite</p>
+                            <p>Apache</p>
+                            <p>Django</p>
+                            <p>Postgress</p>
+                        </div>
+                    </div>
+                    <div class="about__skills">
+                        <div id="tag"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="document">
+            <div class="container">
+                <h2>Documents</h2>
+
+                <div class="cards"></div>
+            </div>
+        </section>
+
+
+        <!------------------- INSTRUCTOR SECTION ------------------->
+        <section class="instructor">
+            <h2 class="section-title">Team</h2>
+          
+            <div class="instructor-grid">
+              <div class="instructor-card">
+                <div class="instructor-img-box">
+                  <img src="image1.PNG" alt="instructor">
+                  <div class="social-link">
+                    <a href="#" class="linkedin" data-linkedin="https://www.linkedin.com/in/suryaa-kiran-501690228" onclick="openLinkedIn(event)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="email" data-email="jamesking@example.com" onclick="sendEmail(event)">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="instructor-name">Suryaa Kiran</h4>
+                <p class="instructor-title">Undergraduate</p>
+              </div>
+          
+              <div class="instructor-card">
+                <div class="instructor-img-box">
+                  <img src="image2.PNG" alt="instructor">
+                  <div class="social-link">
+                    <a href="#" class="linkedin" data-linkedin="https://www.linkedin.com/in/yasith-bagya-37aab914a/" onclick="openLinkedIn(event)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="email" data-email="markhenry@example.com" onclick="sendEmail(event)">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="instructor-name">Yasith Bagya</h4>
+                <p class="instructor-title">Undergraduate</p>
+              </div>
+              
+              <div class="instructor-card">
+                <div class="instructor-img-box">
+                  <img src="image3.PNG" alt="instructor">
+                  <div class="social-link">
+                    <a href="#" class="linkedin" data-linkedin="https://www.linkedin.com/in/yomal-praveen-28239b216/" onclick="openLinkedIn(event)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="email" data-email="moonalisa@example.com" onclick="sendEmail(event)">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="instructor-name">Yomal Praveen</h4>
+                <p class="instructor-title">Undergraduate</p>
+              </div>
+          
+              <div class="instructor-card">
+                <div class="instructor-img-box">
+                  <img src="image4.PNG" alt="instructor">
+                  <div class="social-link">
+                    <a href="#" class="linkedin" data-linkedin="https://www.linkedin.com/in/akilasilva2001/" onclick="openLinkedIn(event)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="email" data-email="marinajohn@example.com" onclick="sendEmail(event)">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="instructor-name">Akila Silva</h4>
+                <p class="instructor-title">Undergraduate</p>
+              </div>
+
+              <div class="instructor-card">
+                <div class="instructor-img-box">
+                  <img src="image5.PNG" alt="instructor">
+                  <div class="social-link">
+                    <a href="#" class="linkedin" data-linkedin="https://www.linkedin.com/in/kavinga-yapa-abeywardena-a1386361/" onclick="openLinkedIn(event)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="email" data-email="marinajohn@example.com" onclick="sendEmail(event)">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="instructor-name">Kavinga Yapa</h4>
+                <p class="instructor-title">Instructor</p>
+              </div>
+
+              <div class="instructor-card">
+                <div class="instructor-img-box">
+                  <img src="image6.PNG" alt="instructor">
+                  <div class="social-link">
+                    <a href="#" class="linkedin" data-linkedin="" onclick="openLinkedIn(event)">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="email" data-email="marinajohn@example.com" onclick="sendEmail(event)">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="instructor-name">Deemantha Siriwardhana</h4>
+                <p class="instructor-title">Instructor</p>
+              </div>
+            </div>
+          </section>
+          
+
+        <section id="achievements">
+            <div class="container">
+                <h2>Achievements</h2>
+                <p class="achievement-text">
+                  We are pleased to announce that our research paper has been accepted for publication at the International Conference on Advancements in Computing 2024. This recognition highlights the value of our contributions to the field and provides an excellent platform to share our findings with the broader academic and professional community. 
+                </p>
+            </div>
+        </section>
+        
+
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact">
+                    <div class="contact__info">
+                        <h2>Contact me</h2>
+                        <form id="my-form" autocomplete="off" action="https://formspree.io/f/xnqlzkod" method="POST">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <label class="label_name "> </label>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <label class="label_name"> </label>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <label class="label_name"> </label>
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <label class="label_msg"> </label>
+                            <button class="Btn Btn--msg" type="submit"> Send Message </button>
+                        </form>
+                        <div id="status"></div>
+                    </div>
+                    <div id="map"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
